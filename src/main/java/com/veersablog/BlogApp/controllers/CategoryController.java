@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+/* This is controller for category*/
 @RestController
 @RequestMapping("/api/category")
 public class CategoryController {
@@ -20,7 +20,8 @@ public class CategoryController {
 
     @PostMapping("/")
     public ResponseEntity<CategoryDto> createCategory(@RequestBody @Valid CategoryDto categoryDto) {
-        CategoryDto categoryDto1 = this.categoryService.createCategory(categoryDto);
+        CategoryDto categoryDto1 =
+                this.categoryService.createCategory(categoryDto);
         return new ResponseEntity<CategoryDto>(categoryDto1 , HttpStatus.CREATED);
     }
 
