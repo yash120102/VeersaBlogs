@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+/* This is a PostController*/
 @RestController
 @RequestMapping("/api/")
 public class PostController {
